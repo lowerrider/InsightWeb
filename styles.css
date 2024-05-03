@@ -539,6 +539,7 @@ h1 {
 
 h2 {
   font-size: 58px;
+
   line-height: 1;
   color: #d3d3d3;
   text-transform: uppercase;
@@ -561,17 +562,18 @@ h3 {
 
 .part1-info {
   width: 30%;
-  gap: 80px;
+  gap: 50px;
   padding: 1%;
 }
 
 .part2-info {
   width: 55%;
-  gap: 80px;
+  gap: 20px;
   padding: 1%;
 }
 
 #part2 {
+  margin-top: 40px;
   height: 90vh;
   width: 100%;
   margin-bottom: 140px;
@@ -607,7 +609,7 @@ h3 {
 }
 #part4 {
   background: #d3692a;
-  height: 60vh;
+  height: 70vh;
   margin-top: 6px;
   position: relative;
   padding-top: 60px;
@@ -664,6 +666,10 @@ a {
 
 h4 {
   color: #c0c0c0;
+}
+
+span {
+  font-size: 14px;
 }
 
 .cybrBtn {
@@ -920,7 +926,7 @@ h4 {
 
 .cyber-tiles-wrapper {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -945,7 +951,7 @@ h4 {
   clip-path: var(--og-clip-path);
   padding: var(--tile-padding);
   padding-bottom: var(--tile-edges);
-  height: 300px;
+  height: 210px;
   background-color: #151515;
   color: white;
   display: flex;
@@ -961,10 +967,10 @@ h4 {
 
 .swiper-container {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 50px;
   overflow: hidden;
-  margin-bottom: 150px;
+  margin-bottom: 60px;
 }
 
 .swiper-slide {
@@ -979,7 +985,7 @@ h4 {
 
 .picture {
   width: 640px;
-  height: 700px;
+  height: 630px;
   overflow: hidden;
 
   img {
@@ -1159,6 +1165,10 @@ h4 {
   background-color: #151515;
 }
 
+.cyber-input::placeholder {
+  color: #000;
+}
+
 .menu {
   gap: 12px;
 }
@@ -1169,7 +1179,7 @@ h4 {
 
 .title-black {
   color: #151515;
-  margin: 100px 0 80px;
+  margin: 20px 0 10px;
 }
 
 .cyber-input input {
