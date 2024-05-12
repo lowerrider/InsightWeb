@@ -1,4 +1,5 @@
 import Swiper from "swiper/bundle";
+import "swiper/css/autoplay";
 
 import { Application } from "@splinetool/runtime";
 
@@ -113,20 +114,41 @@ animateBar("#hero", "0%", "0%", ".barOrangeLeft");
 animateBar("#part1", "55%", "0%", ".barOrangeLeft");
 animateBar("#part2", "0%", "55%", ".barOrangeLeft");
 
-const swiper = new Swiper(".swiper-container", {
-  effect: "coverflow",
-  grabCursor: true,
+// const swiper = new Swiper(".swiper-container", {
+//   autoplay: {
+//     delay: 5000,
+//   },
+//   effect: "coverflow",
+//   grabCursor: true,
+//   centeredSlides: true,
+//   slidesPerView: "auto",
+//   coverflowEffect: {
+//     rotate: 20,
+//     stretch: 0,
+//     depth: 350,
+//     modifier: 1,
+//     slideShadows: true,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+// });
+
+const swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
   centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 20,
-    stretch: 0,
-    depth: 350,
-    modifier: 1,
-    slideShadows: true,
+  autoplay: {
+    delay: 500000,
+    disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 

@@ -45,6 +45,26 @@ a {
   /* animation: fudge 7s ease-in-out alternate infinite; */
 }
 
+.swiper {
+  width: 100%;
+}
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .glitch {
   position: absolute;
   top: 0;
@@ -965,15 +985,15 @@ span {
   margin: 16px;
 }
 
-.swiper-container {
+/* .swiper-container {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 50px;
   overflow: hidden;
   margin-bottom: 60px;
-}
+} */
 
-.swiper-slide {
+/* .swiper-slide {
   background-position: center;
   background-size: cover;
   background-color: #fff;
@@ -981,12 +1001,22 @@ span {
   border-radius: 8px;
   width: 640px !important;
   height: 400px;
+} */
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .picture {
   width: 640px;
   height: 630px;
   overflow: hidden;
+  margin: auto;
 
   img {
     display: block;
