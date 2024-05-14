@@ -686,6 +686,7 @@ a {
 
 h4 {
   color: #c0c0c0;
+  margin: 10px;
 }
 
 span {
@@ -946,7 +947,7 @@ span {
 
 .cyber-tiles-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
@@ -1028,6 +1029,7 @@ span {
 
 .detail {
   padding: 25px 20px;
+  margin-bottom: 20px;
   font-weight: 600;
   text-align: center;
 }
@@ -1209,7 +1211,7 @@ span {
 
 .title-black {
   color: #151515;
-  margin: 20px 0 10px;
+  margin: 20px 0;
 }
 
 .cyber-input input {
@@ -1236,6 +1238,10 @@ span {
 .inputs {
   display: grid;
   gap: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 1000px) {
