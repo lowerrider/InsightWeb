@@ -1202,7 +1202,16 @@ span {
 }
 
 .menu {
-  gap: 12px;
+  gap: 18px;
+}
+
+.menu_text {
+  transition: 1s;
+}
+
+.menu_text:hover {
+  color: #d3692a;
+  transform: scale(1.1);
 }
 
 .footer {
