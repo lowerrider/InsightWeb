@@ -1,200 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Insight</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;400;800&display=swap"
-      rel="stylesheet" />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
-      
-  </head>
-  <body>
-    <div class="background">
 
-      <nav class="flex row">
-        <!--  made-up logo  -->
-        <img src="./assets/logo2.png" alt="logo" class="logo-img" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insight</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;400;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-        <div class="flex row menu">
-            <a  href="#part1"><h3 class="menu_text">О нас</h3></a>
-            <a  href="#part2"><h3 class="menu_text">Наши услуги</h3></a>
-            <a  href="#part3"><h3 class="menu_text">Команда</h3></a>
-            <a href="#part4"><h3 class="menu_text">Оставить заявку</h3></a>
-            <a  href="#part5"><h3 class="menu_text">Документы</h3></a>
+<body>
+  <div class="background">
+    <nav class="flex row">
+      <!--  made-up logo  -->
+      <img src="./assets/logo2.png" alt="logo" class="logo-img" />
+
+      <div class="flex row menu">
+        <a href="#part1">
+          <h3 class="menu_text">О нас</h3>
+        </a>
+        <a href="#part2">
+          <h3 class="menu_text">Наши услуги</h3>
+        </a>
+        <a href="#part3">
+          <h3 class="menu_text">Команда</h3>
+        </a>
+        <a href="#part4">
+          <h3 class="menu_text">Оставить заявку</h3>
+        </a>
+        <a href="#part5">
+          <h3 class="menu_text">Документы</h3>
+        </a>
+      </div>
+    </nav>
+
+
+    <div id="barOrangeRight" class="barOrangeRight">
+      <!-- <div class="razor"></div> -->
+    </div>
+    <div class="barBlackLeft"></div>
+    <div id="barOrangeLeft" class="barOrangeLeft"></div>
+    <div class="barBlackRight"></div>
+
+    <div class="robot">
+      <canvas id="canvas3d"></canvas>
+      <div class="ropot_title">
+        <h3 class="hero1 paths">Проектная группа IT специалистов</h3>
+      </div>
+    </div>
+    <!-- 
+    <div id="hero" class="flex column">
+      <h1>Проектная</h1>
+      <h1>группа</h1>
+      <h1>ИТ специалистов</h1>
+      <h2>Разработка и внедрение решений любой сложности</h2>
+    </div> -->
+
+    <div id="part1" class="flex row">
+      <div></div>
+      <div class="part1-info flex column">
+        <h2>О НАС</h2>
+
+        <div class="cybrBtn">
+          <span>Мы превращаем Ваши идеи в готовые продукты. В разработке мы
+            используем самые современные технологичные решения, практикуемые
+            мировыми лидерами в области информационных технологий
+          </span>
+          <span class="cybrBtn__glitch">Мы превращаем Ваши идеи в готовые продукты. В разработке мы
+            используем самые современные технологичные решения, практикуемые
+            мировыми лидерами в области информационных технологий
+          </span>
         </div>
-      </nav>
-
-      <div class="padding">
-      <div id="barOrangeRight" class="barOrangeRight">
-        <!-- <div class="razor"></div> -->
-      </div>
-      <div class="barBlackLeft"></div>
-      <div id="barOrangeLeft" class="barOrangeLeft"></div>
-      <div class="barBlackRight"></div>
-
-      <div class="canvas-cont">
-        <canvas id="canvas3d"></canvas>
-      </div>
-
-      <div id="hero" class="flex column">
-        <h1>Проектная</h1>
-        <h1>группа</h1>
-        <h1>ИТ специалистов</h1>
-        <h2>Разработка и внедрение решений любой сложности</h2>
-      </div>
-
-      <div id="part1" class="flex row">
-        <div></div>
-        <div class="part1-info flex column">
-          <h2>О НАС</h2>
-
-          <div class="cybrBtn">
-            <span
-              >Мы превращаем Ваши идеи в готовые продукты. В разработке мы
-              используем самые современные технологичные решения, практикуемые
-              мировыми лидерами в области информационных технологий
-            </span>
-            <span class="cybrBtn__glitch"
-              >Мы превращаем Ваши идеи в готовые продукты. В разработке мы
-              используем самые современные технологичные решения, практикуемые
-              мировыми лидерами в области информационных технологий
-            </span>
-          </div>
-          <div class="cybrBtn">
-            <span
-              >Оперативная техническая поддержка, клиентоориентированность и
-              квалификация наших сотрудников позволяют клиентам быть спокойными
-              за реализацию и интеграцию цифровых продуктов
-            </span>
-            <span class="cybrBtn__glitch"
-              >Оперативная техническая поддержка, клиентоориентированность и
-              квалификация наших сотрудников позволяют клиентам быть спокойными
-              за реализацию и интеграцию цифровых продуктов
-            </span>
-          </div>
-          <div class="cybrBtn">
-            <span
-              >Благодаря предварительному комплексному анализу наша компания
-              подбирает наиболее оптимальное решение, внедрение которого
-              позволит максимизировать прибыль при минимальных затратах на
-              разработку
-            </span>
-            <span class="cybrBtn__glitch"
-              >Благодаря предварительному комплексному анализу наша компания
-              подбирает наиболее оптимальное решение, внедрение которого
-              позволит максимизировать прибыль при минимальных затратах на
-              разработку
-            </span>
-          </div>
-          <div class="cybrBtn">
-            <span
-              >Наши заказчики определили, что сотрудничество с нами выгоднее,
-              чем содержание в штате технических специалистов. За счет
-              индивидуального подхода наша компания готова воплощать любые идеи
-              и развивать ваш бизнес
-            </span>
-            <span class="cybrBtn__glitch"
-              >Наши заказчики определили, что сотрудничество с нами выгоднее,
-              чем содержание в штате технических специалистов. За счет
-              индивидуального подхода наша компания готова воплощать любые идеи
-              и развивать ваш бизнес
-            </span>
-          </div>
-          <h3></h3>
-          <!-- <h2>PLAY LIKE A PRO.</h2>
+        <div class="cybrBtn">
+          <span>Оперативная техническая поддержка, клиентоориентированность и
+            квалификация наших сотрудников позволяют клиентам быть спокойными
+            за реализацию и интеграцию цифровых продуктов
+          </span>
+          <span class="cybrBtn__glitch">Оперативная техническая поддержка, клиентоориентированность и
+            квалификация наших сотрудников позволяют клиентам быть спокойными
+            за реализацию и интеграцию цифровых продуктов
+          </span>
+        </div>
+        <div class="cybrBtn">
+          <span>Благодаря предварительному комплексному анализу наша компания
+            подбирает наиболее оптимальное решение, внедрение которого
+            позволит максимизировать прибыль при минимальных затратах на
+            разработку
+          </span>
+          <span class="cybrBtn__glitch">Благодаря предварительному комплексному анализу наша компания
+            подбирает наиболее оптимальное решение, внедрение которого
+            позволит максимизировать прибыль при минимальных затратах на
+            разработку
+          </span>
+        </div>
+        <div class="cybrBtn">
+          <span>Наши заказчики определили, что сотрудничество с нами выгоднее,
+            чем содержание в штате технических специалистов. За счет
+            индивидуального подхода наша компания готова воплощать любые идеи
+            и развивать ваш бизнес
+          </span>
+          <span class="cybrBtn__glitch">Наши заказчики определили, что сотрудничество с нами выгоднее,
+            чем содержание в штате технических специалистов. За счет
+            индивидуального подхода наша компания готова воплощать любые идеи
+            и развивать ваш бизнес
+          </span>
+        </div>
+        <h3></h3>
+        <!-- <h2>PLAY LIKE A PRO.</h2>
           <p>
             With these keyboards, you'll get proper bounce, a bit of *click*,
             and lots of satisfaction.
           </p>
           <button>Make a keyboard - It's easy!</button> -->
-        </div>
-      </div>
-
-      <div id="part2" class="flex row">
-        <div class="part2-info flex column">
-          <h2>НАШИ УСЛУГИ</h2>
-          <div class="cyber-tiles-wrapper">
-            <div class="cyber-tile">
-
-              <img src="./assets/icons/svg_1.svg" alt="briefcase-logo" class="icon"/>
-
-              <h4>Большой стаж в IT</h4>
-              <h4>10-летний опыт на рынке разработок</h4>
-            </div>
-            <div class="cyber-tile">
-              <img src="./assets/icons/svg_2.svg" alt="briefcase-logo" class="icon"/>
-                <h4>Профессионализм</h4>
-                <h4>Наша система распределения задач позволяет нам предлагать быстрые решения, которые необходимы Вашему бизнесу</h4>
-            </div> 
-            <div class="cyber-tile">
-                <img src="./assets/icons/svg_3.svg" alt="briefcase-logo" class="icon"/>
-                <h4>Высокие компетенции</h4>
-                <h4>С вами будут работать самые квалифицированные специалисты, чтобы обеспечить высокое качество на каждом этапе проекта</h4>
-            </div> 
-            <div class="cyber-tile">
-
-                <img src="./assets/icons/svg_4.svg" alt="briefcase-logo" class="icon"/>
-                <h4>Скорость</h4>
-                <h4>Вам не нужно ждать, пока кто-то освободится от другого проекта. задачи можно выполнять намного быстрее!</h4>
-            </div> 
-            <div class="cyber-tile">
-                <img src="./assets/icons/svg_5.svg" alt="briefcase-logo" class="icon"/>
-                <h4>Технологии сегодняшнего дня</h4>
-                <h4>Конечный продукт будет использовать самые "свежие" решения, применяемые на международном рынке</h4>
-            </div> 
-            <div class="cyber-tile">
-                <img src="./assets/icons/svg_6.svg" alt="briefcase-logo" class="icon"/>
-                <h4>Доступные цены</h4>
-                <h4>Вам не нужно подписывать долгосрочные контракты, мы предлагаем гибкие условия оплаты</h4>
-            </div> 
-          </div>
-        </div>
-        <div class="part2-info-title">
-            <h4>Благодаря предварительному комплексному анализу наша компания подбирает наиболее оптимальное решение, внедрение которого позволит максимизировать прибыль при минимальных затратах на разработку.</h4>
-        </div>
       </div>
     </div>
-    <div id="part3" class="flex column">
-        <h2 class="title-black">Команда</h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="picture">
-                <img src="./assets/ceo.jpg" alt="photo">
-              </div>
-              <div class="detail">
-                <span class="cyberpunk-font">CEO</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="picture">
-                <img src="./assets/sanya.jpg" alt="">
-              </div>
-              <div class="detail">
-                <span class="cyberpunk-font">CTO</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="picture">
-                <img src="./assets/den.jpg" alt="photo">
-              </div>
-              <div class="detail">
-                <span class="cyberpunk-font">Senior&nbsp;&nbsp;Dev</span>
-              </div>
-            </div>
-            
+
+    <div id="part2" class="flex row">
+      <div class="part2-info flex column">
+        <h2>НАШИ УСЛУГИ</h2>
+        <div class="cyber-tiles-wrapper">
+          <div class="cyber-tile">
+            <img src="./assets/icons/svg_1.svg" alt="briefcase-logo" class="icon" />
+
+            <h4>Большой стаж в IT</h4>
+            <h4>10-летний опыт на рынке разработок</h4>
           </div>
-          <!-- <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div> -->
-          <div class="swiper-pagination"></div>
+          <div class="cyber-tile">
+            <img src="./assets/icons/svg_2.svg" alt="briefcase-logo" class="icon" />
+            <h4>Профессионализм</h4>
+            <h4>
+              Наша система распределения задач позволяет нам предлагать
+              быстрые решения, которые необходимы Вашему бизнесу
+            </h4>
+          </div>
+          <div class="cyber-tile">
+            <img src="./assets/icons/svg_3.svg" alt="briefcase-logo" class="icon" />
+            <h4>Высокие компетенции</h4>
+            <h4>
+              С вами будут работать самые квалифицированные специалисты, чтобы
+              обеспечить высокое качество на каждом этапе проекта
+            </h4>
+          </div>
+          <div class="cyber-tile">
+            <img src="./assets/icons/svg_4.svg" alt="briefcase-logo" class="icon" />
+            <h4>Скорость</h4>
+            <h4>
+              Вам не нужно ждать, пока кто-то освободится от другого проекта.
+              задачи можно выполнять намного быстрее!
+            </h4>
+          </div>
+          <div class="cyber-tile">
+            <img src="./assets/icons/svg_5.svg" alt="briefcase-logo" class="icon" />
+            <h4>Технологии сегодняшнего дня</h4>
+            <h4>
+              Конечный продукт будет использовать самые "свежие" решения,
+              применяемые на международном рынке
+            </h4>
+          </div>
+          <div class="cyber-tile">
+            <img src="./assets/icons/svg_6.svg" alt="briefcase-logo" class="icon" />
+            <h4>Доступные цены</h4>
+            <h4>
+              Вам не нужно подписывать долгосрочные контракты, мы предлагаем
+              гибкие условия оплаты
+            </h4>
+          </div>
         </div>
-        <!-- <div class="swiper swiper-container">
+      </div>
+      <div class="part2-info-title">
+        <h4>
+          Благодаря предварительному комплексному анализу наша компания
+          подбирает наиболее оптимальное решение, внедрение которого позволит
+          максимизировать прибыль при минимальных затратах на разработку.
+        </h4>
+      </div>
+    </div>
+
+    <div id="part3" class="flex column">
+      <h2 class="title-black">Команда</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="picture">
+              <img src="./assets/ceo.jpg" alt="photo" />
+            </div>
+            <div class="detail">
+              <span class="cyberpunk-font">CEO</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="picture">
+              <img src="./assets/sanya.jpg" alt="" />
+            </div>
+            <div class="detail">
+              <span class="cyberpunk-font">CTO</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="picture">
+              <img src="./assets/den.jpg" alt="photo" />
+            </div>
+            <div class="detail">
+              <span class="cyberpunk-font">Senior&nbsp;&nbsp;Dev</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- <div class="swiper swiper-container">
          
             <div class="swiper-wrapper">
           
@@ -244,42 +261,36 @@
             <div class="swiper-pagination"></div>
         </div> -->
     </div>
-    <div id="part4" >
-        <div class="padding flex part4-info">
-            <h2 class="form-title">Оставить заявку</h2>
-            <h3>Заполните данную форму и мы свяжемся с Вами в ближайшее время!</h3>
+    <div id="part4">
+      <div class="padding flex part4-info">
+        <h2 class="form-title">Оставить заявку</h2>
+        <h3>Заполните данную форму и мы свяжемся с Вами в ближайшее время!</h3>
         <form class="form">
-
+          <div class="cyber-input">
+            <input type="text" placeholder="Введите email..." />
+          </div>
+          <h3>или</h3>
+          <div class="inputs">
             <div class="cyber-input">
-                <input type="text" placeholder="Введите email..." />
+              <input type="text" placeholder="Введите номер..." />
             </div>
-            <h3>или</h3>
-            <div class="inputs">
-                <div class="cyber-input">
-                    <input type="text" placeholder="Введите номер..." />
-                </div>
-                <div class="cyber-input">
-                    <input type="text" placeholder="Введите имя..." />
-                </div>
+            <div class="cyber-input">
+              <input type="text" placeholder="Введите имя..." />
             </div>
+          </div>
 
-            <button class="cyber-button-small">
-                Отправить
-            </button>
+          <button class="cyber-button-small">Отправить</button>
         </form>
-        </div>
+      </div>
     </div>
     <div id="part5">
-        <div class="padding">
-            <h2>Документы</h2>
-
-        </div>
-
+      <div class="padding">
+        <h2>Документы</h2>
+      </div>
     </div>
-<footer >
-    <h3 class="footer">Footer</h3>
-</footer>
-
+    <footer>
+      <h3 class="footer">Footer</h3>
+    </footer>
 
     <div class="glitch"></div>
 
@@ -287,7 +298,8 @@
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="dist/main.js"></script> 
+    <script type="module" src="dist/main.js"></script>
     <!-- <script type="module" src="index.js"></script> -->
-  </body>
+</body>
+
 </html>
