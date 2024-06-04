@@ -92,7 +92,6 @@ import "swiper/css/autoplay";
 // second ANIMATION
 
 // NEW ANIMATION
-
 import { Application } from "@splinetool/runtime";
 
 const canvas = document.getElementById("canvas3d");
