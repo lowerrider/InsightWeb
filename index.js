@@ -98,6 +98,20 @@ const canvas = document.getElementById("canvas3d");
 const app = new Application(canvas);
 app.load("https://prod.spline.design/Zv5ex1qCxfwDEjRx/scene.splinecode");
 
+// cards
+
+const canvasCard = document.getElementById("team3d");
+const app2 = new Application(canvasCard);
+app2.load("https://prod.spline.design/jliz6IQBwpNsRW6d/scene.splinecode");
+
+const canvasVasya = document.getElementById("team4d");
+const app3 = new Application(canvasVasya);
+app3.load("https://prod.spline.design/DndazSYU4Xqs0udu/scene.splinecode");
+
+const canvasSanya = document.getElementById("team5d");
+const app4 = new Application(canvasSanya);
+app4.load("https://prod.spline.design/gsGrKl3qf42CAbMl/scene.splinecode");
+
 // background progress bar
 function animateBar(triggerElement, onEnterWidth, onLeaveBackWidth, className) {
   gsap.to(className, {
