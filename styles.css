@@ -46,14 +46,15 @@ a {
 }
 .background,
 .glitch {
+  /*РЯБЬ ФОНА ГЛИТЧИ ФОНА
   /* width: 100%; */
   /* height: 100%; */
-  background: repeating-linear-gradient(
+  /* background: repeating-linear-gradient(
     to bottom,
     transparent 0%,
     rgba(255, 255, 255, 0.05) 0.1%,
     transparent 0.2%
-  );
+  ); */
   /* -webkit-animation: fudge 7s ease-in-out alternate infinite; */
   /* animation: fudge 7s ease-in-out alternate infinite; */
 }
@@ -505,6 +506,13 @@ nav::before {
   z-index: 1;
 }
 
+.footer_icons {
+  margin: 0 0 20px 22px;
+}
+
+.footer_icons:hover {
+}
+
 footer {
   position: relative;
   width: calc(100% - 40px);
@@ -624,11 +632,12 @@ h3 {
 }
 
 #part3 {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
   background: rgba(255, 255, 255, 0.7);
-  margin-top: 30px;
   position: relative;
-  align-items: center;
 }
 
 #part3::before {
@@ -700,7 +709,7 @@ a {
 }
 
 .cybrBtnOrange {
-  --primary: #d3692a !important;
+  --primary: #ffffff !important;
   --shadow-primary: #151515 !important;
   --shadow-secondary: #151515 !important;
 }
@@ -716,7 +725,7 @@ span {
 
 .cybrBtn {
   --primary: #151515;
-  --shadow-primary: #d3692a;
+  --shadow-primary: #ffffff;
   --primary-hue: 0;
   --primary-lightness: 50;
   --color: #c0c0c0;
@@ -724,7 +733,7 @@ span {
   --shadow-primary-hue: 180;
   --label-size: 9px;
   --shadow-secondary-hue: 60;
-  --shadow-secondary: #d3692a;
+  --shadow-secondary: #ffffff;
   --clip: polygon(
     0 0,
     100% 0,
@@ -1316,9 +1325,43 @@ span {
   margin-bottom: 0;
 }
 
+.images_cards {
+  display: grid;
+  margin-bottom: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
 .title-black {
   color: #151515;
-  margin: 20px 0;
+  margin: 20px auto;
+}
+
+.teamImage {
+  height: 450px;
+}
+
+.cyberImg {
+  padding: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  clip-path: polygon(
+    0px 25px,
+    26px 0px,
+    calc(60% - 25px) 0px,
+    60% 25px,
+    100% 25px,
+    100% calc(100% - 10px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(80% - 10px) calc(100% - 10px),
+    calc(80% - 15px) calc(100% - 0px),
+    10px calc(100% - 0px),
+    0% calc(100% - 10px)
+  );
+  background-color: black;
+  max-width: calc(100% - 10px);
 }
 
 .cyber-input input {

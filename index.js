@@ -1,6 +1,3 @@
-import Swiper from "swiper/bundle";
-import "swiper/css/autoplay";
-
 // import { Application } from "@splinetool/runtime";
 
 // const canvas = document.getElementById("canvas3d");
@@ -98,39 +95,39 @@ const canvas = document.getElementById("canvas3d");
 const app = new Application(canvas);
 app.load("https://prod.spline.design/Zv5ex1qCxfwDEjRx/scene.splinecode");
 // background progress bar
-function animateBar(triggerElement, onEnterWidth, onLeaveBackWidth, className) {
-  gsap.to(className, {
-    scrollTrigger: {
-      trigger: triggerElement,
-      start: "bottom bottom",
-      end: "bottom bottom",
-      scrub: true,
+// function animateBar(triggerElement, onEnterWidth, onLeaveBackWidth, className) {
+//   gsap.to(className, {
+//     scrollTrigger: {
+//       trigger: triggerElement,
+//       start: "bottom bottom",
+//       end: "bottom bottom",
+//       scrub: true,
 
-      onEnter: () => {
-        gsap.to(className, {
-          width: onEnterWidth,
-          duration: 0.2,
-          ease: "none",
-        });
-      },
-      onLeaveBack: () => {
-        gsap.to(className, {
-          width: onLeaveBackWidth,
-          duration: 0.2,
-          ease: "none",
-        });
-      },
-    },
-  });
-}
+//       onEnter: () => {
+//         gsap.to(className, {
+//           width: onEnterWidth,
+//           duration: 0.2,
+//           ease: "none",
+//         });
+//       },
+//       onLeaveBack: () => {
+//         gsap.to(className, {
+//           width: onLeaveBackWidth,
+//           duration: 0.2,
+//           ease: "none",
+//         });
+//       },
+//     },
+//   });
+// }
 
-animateBar("#hero", "35%", "0%", ".barOrangeRight");
-animateBar("#part1", "0%", "35%", ".barOrangeRight");
-animateBar("#part2", "0%", "0%", ".barOrangeRight");
+// animateBar("#hero", "35%", "0%", ".barOrangeRight");
+// animateBar("#part1", "0%", "35%", ".barOrangeRight");
+// animateBar("#part2", "0%", "0%", ".barOrangeRight");
 
-animateBar("#hero", "0%", "0%", ".barOrangeLeft");
-animateBar("#part1", "55%", "0%", ".barOrangeLeft");
-animateBar("#part2", "0%", "55%", ".barOrangeLeft");
+// animateBar("#hero", "0%", "0%", ".barOrangeLeft");
+// animateBar("#part1", "55%", "0%", ".barOrangeLeft");
+// animateBar("#part2", "0%", "55%", ".barOrangeLeft");
 
 // const swiper = new Swiper(".swiper-container", {
 //   autoplay: {
@@ -151,59 +148,3 @@ animateBar("#part2", "0%", "55%", ".barOrangeLeft");
 //     el: ".swiper-pagination",
 //   },
 // });
-
-const swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 500000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-const observer = new MutationObserver(function (mutations) {
-  mutations.forEach(function (mutation) {
-    if (
-      mutation.attributeName === "style" &&
-      mutation.target.id === "barOrangeRight"
-    ) {
-      for (let el of cyberBtns) {
-        if (mutation.target.style.width === "35%") {
-          el.classList.remove("cybrBtnOrange");
-        } else {
-          el.classList.add("cybrBtnOrange");
-        }
-      }
-    }
-
-    if (
-      mutation.attributeName === "style" &&
-      mutation.target.id === "barOrangeLeft"
-    ) {
-      for (let el of cyberTitles) {
-        if (mutation.target.style.width === "55%") {
-          el.classList.remove("cybrTitleOrange");
-        } else {
-          el.classList.add("cybrTitleOrange");
-        }
-      }
-    }
-  });
-});
-
-const observerConfig = {
-  attributes: true,
-  attributeFilter: ["style"],
-};
-
-observer.observe(barOrangeRight, observerConfig);
-observer.observe(barOrangeLeft, observerConfig);
