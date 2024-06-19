@@ -508,9 +508,12 @@ nav::before {
 
 .footer_icons {
   margin: 0 0 20px 22px;
+  transition: 0.3s;
 }
 
 .footer_icons:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
 footer {
@@ -610,6 +613,7 @@ h3 {
 #part1 {
   width: 100%;
   height: 100vh;
+  justify-content: space-around;
 }
 
 .part1-info {
@@ -1340,6 +1344,17 @@ span {
 
 .teamImage {
   height: 450px;
+  filter: blur(3px);
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.teamImage:hover {
+  filter: blur(0px);
+  opacity: 1;
+  transition: 0.3s;
+  transform: scale(1.01);
 }
 
 .cyberImg {
