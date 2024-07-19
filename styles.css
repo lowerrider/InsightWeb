@@ -12,6 +12,20 @@
   font-weight: 100;
 }
 
+@font-face {
+  font-family: "AIRNT Font bold";
+  src: url(./fonts/airnt/AirntQuantum-JRMra.otf);
+  font-style: bold;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "AIRNT Font";
+  src: url(/fonts/airnt/AirntQuantum-JRMra.otf);
+  font-style: normal;
+  font-weight: 100;
+}
+
 h1,
 h2,
 h3,
@@ -43,61 +57,6 @@ a {
 
 .padding {
   padding: 20px;
-}
-.background,
-.glitch {
-  /*РЯБЬ ФОНА ГЛИТЧИ ФОНА
-  /* width: 100%; */
-  /* height: 100%; */
-  /* background: repeating-linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(255, 255, 255, 0.05) 0.1%,
-    transparent 0.2%
-  ); */
-  /* -webkit-animation: fudge 7s ease-in-out alternate infinite; */
-  /* animation: fudge 7s ease-in-out alternate infinite; */
-}
-
-.swiper {
-  width: 100%;
-}
-
-/* .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.glitch {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.glitch {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: glitch-anim;
-  animation-name: glitch-anim;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
 }
 
 @-webkit-keyframes glitch-anim {
@@ -432,7 +391,7 @@ a {
   font-family: "Bricolage Grotesque", sans-serif;
 }
 
-.flex {
+/* .flex {
   display: flex;
 }
 
@@ -441,12 +400,30 @@ a {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0;
-}
+} */
 
-.flex.column {
+/* .flex.column {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header_left {
+  gap: 40px;
+}
+
+.header_right {
+  display: flex;
+  margin: 0px;
+  align-items: center;
+  gap: 40px;
 }
 
 .logo-img {
@@ -506,9 +483,86 @@ nav::before {
   z-index: 1;
 }
 
+.title {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  height: 80vh;
+}
+
+.title_center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.title_center_images_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_center_images_left {
+}
+
+.title_img {
+  width: 500px;
+  position: absolute;
+  left: 31%;
+  top: 8px;
+}
+
+.title_text_front {
+  font-weight: 900;
+  font-size: 22vh;
+  filter: drop-shadow(27px 66px gray);
+  letter-spacing: 6vh;
+  font-family: "AIRNT Font bold";
+  color: #000;
+  margin: 12vh 0 0 0;
+}
+
+.title_left {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.title_left_down {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  border-right: 4px solid black;
+}
+
+.title_left_down_right {
+  display: flex;
+  flex-direction: column;
+  max-height: 20vh;
+  width: fit-content;
+}
+
+.title_left_down_right_img {
+  width: 40px;
+}
+
+.title_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-left: 2px solid black;
+}
+
+.vector {
+  margin: 0 4vh;
+}
+
+.title_right_down {
+  min-height: 20vh;
+  border-left: 4px solid black;
+}
+
 .footer_icons {
   margin: 0 0 20px 22px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .footer_icons:hover {
@@ -539,36 +593,6 @@ footer::before {
   width: 100%;
   height: 30px;
   z-index: 1;
-}
-
-.barOrangeRight {
-  height: 100%;
-  width: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -5;
-  background-color: #000000;
-}
-
-.barBlackLeft {
-  background-color: #ffffff;
-  height: 100%;
-  width: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -5;
-}
-
-.barOrangeLeft {
-  height: 100%;
-  width: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -5;
-  background-color: #f8f8f8;
 }
 
 .barBlackRight {
@@ -610,27 +634,82 @@ h3 {
   height: 100vh;
 }
 
-#part1 {
+#aboutUs {
   width: 100%;
-  height: 100vh;
-  justify-content: space-around;
 }
 
-.part1-info {
-  width: 30%;
+.aboutUs_top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.abotUs_content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.aboutUs_info {
+}
+
+.aboutUs_info_content {
+  display: flex;
+  flex-direction: column;
   gap: 50px;
-  padding: 1%;
 }
 
-.part2-info {
-  width: 55%;
-  gap: 20px;
-  padding: 1%;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-#part2 {
+@keyframes spin2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.aboutUs_right {
+  margin: 0 40px 0 0;
+}
+
+.aboutUs_left_img_relative {
+  position: relative;
+  width: 900px;
+  height: auto;
+  animation: spin 100s linear 0s infinite;
+}
+
+.aboutUs_left_img_absolute {
+  position: absolute;
+  top: 218px;
+  left: 140px;
+  width: 620px;
+  height: auto;
+  animation: spin2 440s linear 0s infinite;
+}
+
+.services_left_content {
+  gap: 30px;
+  padding: 1%;
+  max-width: 800px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+#services {
   margin-top: 40px;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   margin-bottom: 140px;
 }
@@ -707,15 +786,11 @@ a {
   color: #d3d3d3;
 }
 
-.part2-info-title {
+.services_right {
+  display: flex;
+  align-items: center;
   max-width: 700px;
   font-size: 40px;
-}
-
-.cybrBtnOrange {
-  --primary: #ffffff !important;
-  --shadow-primary: #151515 !important;
-  --shadow-secondary: #151515 !important;
 }
 
 h4 {
@@ -1009,10 +1084,8 @@ span {
   height: 210px;
   background-color: #151515;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .cyber-tile label {
@@ -1443,3 +1516,5 @@ html {
     font-size: 5vw;
   }
 }
+
+/* EXPEREMENT */

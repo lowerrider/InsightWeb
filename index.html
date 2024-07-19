@@ -12,110 +12,145 @@
 </head>
 
 <body>
-  <div class="background">
-    <nav class="flex row">
-      <!--  made-up logo  -->
-      <img src="./assets/logo2.png" alt="logo" class="logo-img" />
-
-      <div class="flex row menu">
+  <div class="header">
+    <div class="header_left"><img src="./assets/logo2.png" alt="logo" class="logo-img" /></div>
+    <div class="header_right">
+      <nav class="header_right">
+        <!--  made-up logo  -->
         <a href="#part1">
           <h3 class="glitchMenu" data-text="О нас">О нас</h3>
         </a>
         <a href="#part2">
           <h3 class="glitchMenu" data-text="Наши услуги">Наши услуги</h3>
         </a>
-        <!-- <a href="#part3">
-          <h3 class="menu_text">Команда</h3>
-        </a> -->
         <a href="#application">
           <h3 class="glitchMenu" data-text="Оставить заявку">Оставить заявку</h3>
         </a>
-        <!-- <a href="#part5">
-          <h3 class="menu_text">Документы</h3>
-        </a>
-      </div> -->
-    </nav>
-
-
-    <div id="barOrangeRight" class="barOrangeRight">
-      <!-- <div class="razor"></div> -->
+      </nav>
     </div>
-    <div class="barBlackLeft"></div>
-    <div id="barOrangeLeft" class="barOrangeLeft"></div>
-    <div class="barBlackRight"></div>
-
-    <div class="robot">
-      <canvas id="canvas3d"></canvas>
+  </div>
+  <div class="title">
+    <div class="title_left">
+      <div class="title_left_down">
+        <img src="./assets/images/X.svg" alt="">
+        <div class="title_left_down_right">
+          <img class="title_left_down_right_img" src="./assets/images/title_smile.svg" alt="">
+          <img class="title_left_down_right_img" src="./assets/images/title_smile.svg" alt="">
+          <img class="title_left_down_right_img" src="./assets/images/title_smile.svg" alt="">
+          <img class="title_left_down_right_img" src="./assets/images/title_smile.svg" alt="">
+        </div>
+      </div>
     </div>
-    <!-- 
-    <div id="hero" class="flex column">
+    <div class="title_center">
+      <h2 class="title_text_front">INSIGHT</h2>
+      <img class="title_img" src="./assets/images/headerGirl.svg" alt="">
+      <div class="title_center_images_container">
+        <div class="title_center_images_left">
+          <img class="scrollDown" src="./assets/images/SCROLL DOWN.svg" alt="">
+          <img src="./assets/images/scan.svg" alt="">
+        </div>
+        <div class="title_center_images_right">
+          <img src="./assets/images/title_center_girl_right.svg" alt="">
+        </div>
+      </div>
+
+
+    </div>
+    <div class="title_right">
+      <div class="vector">
+        <img src="./assets/images/VectorBlack.svg" alt="">
+        <img src="./assets/images/VectorWhite.svg" alt="">
+        <img src="./assets/images/VectorBlack.svg" alt="">
+        <img src="./assets/images/VectorWhite.svg" alt="">
+      </div>
+      <div class="title_right_down"></div>
+    </div>
+
+  </div>
+
+
+  <!-- <div class="robot">
+    <canvas id="canvas3d"></canvas>
+  </div> -->
+
+  <!-- <div id="hero" class="flex column">
       <h1>Проектная</h1>
       <h1>группа</h1>
       <h1>ИТ специалистов</h1>
       <h2>Разработка и внедрение решений любой сложности</h2>
     </div> -->
+  <div id="aboutUs" class="aboutUs">
+    <div class="aboutUs_top"><img class="aboutUs_top_img" src="./assets/images/UnionTop.png" alt=""></div>
+    <div class="abotUs_content">
+      <div class="aboutUs_left">
+        <img class="aboutUs_left_img_relative" src="./assets/images/imageSpin.svg" alt="aboutUs_left_img_relative">
+        <!-- <img class="aboutUs_left_img_absolute" src="./assets/images/imageSpin2.png" alt="aboutUs_left_img_absolute"> -->
+      </div>
+      <div class="aboutUs_right">
+        <div class="aboutUs_info">
+          <h2 class="aboutUs_info_title">О НАС</h2>
+          <div class="aboutUs_info_content">
+            <div class="cybrBtn">
+              <span>Мы превращаем Ваши идеи в готовые продукты. В разработке мы
+                используем самые современные технологичные решения, практикуемые
+                мировыми лидерами в области информационных технологий
+              </span>
+              <span class="cybrBtn__glitch">Мы превращаем Ваши идеи в готовые продукты. В разработке мы
+                используем самые современные технологичные решения, практикуемые
+                мировыми лидерами в области информационных технологий
+              </span>
+            </div>
+            <div class="cybrBtn">
+              <span>Оперативная техническая поддержка, клиентоориентированность и
+                квалификация наших сотрудников позволяют клиентам быть спокойными
+                за реализацию и интеграцию цифровых продуктов
+              </span>
+              <span class="cybrBtn__glitch">Оперативная техническая поддержка, клиентоориентированность и
+                квалификация наших сотрудников позволяют клиентам быть спокойными
+                за реализацию и интеграцию цифровых продуктов
+              </span>
+            </div>
+            <div class="cybrBtn">
+              <span>Благодаря предварительному комплексному анализу наша компания
+                подбирает наиболее оптимальное решение, внедрение которого
+                позволит максимизировать прибыль при минимальных затратах на
+                разработку
+              </span>
+              <span class="cybrBtn__glitch">Благодаря предварительному комплексному анализу наша компания
+                подбирает наиболее оптимальное решение, внедрение которого
+                позволит максимизировать прибыль при минимальных затратах на
+                разработку
+              </span>
+            </div>
+            <div class="cybrBtn">
+              <span>Наши заказчики определили, что сотрудничество с нами выгоднее,
+                чем содержание в штате технических специалистов. За счет
+                индивидуального подхода наша компания готова воплощать любые идеи
+                и развивать ваш бизнес
+              </span>
+              <span class="cybrBtn__glitch">Наши заказчики определили, что сотрудничество с нами выгоднее,
+                чем содержание в штате технических специалистов. За счет
+                индивидуального подхода наша компания готова воплощать любые идеи
+                и развивать ваш бизнес
+              </span>
+            </div>
+          </div>
 
-    <div id="part1" class="flex row">
-      <div class="part1_left"><img src="./assets/images/download.webp" alt=""></div>
-      <div class="part1-info flex column">
-        <h2>О НАС</h2>
 
-        <div class="cybrBtn">
-          <span>Мы превращаем Ваши идеи в готовые продукты. В разработке мы
-            используем самые современные технологичные решения, практикуемые
-            мировыми лидерами в области информационных технологий
-          </span>
-          <span class="cybrBtn__glitch">Мы превращаем Ваши идеи в готовые продукты. В разработке мы
-            используем самые современные технологичные решения, практикуемые
-            мировыми лидерами в области информационных технологий
-          </span>
+          <!-- <h2>PLAY LIKE A PRO.</h2>
+              <p>
+                With these keyboards, you'll get proper bounce, a bit of *click*,
+                and lots of satisfaction.
+              </p>
+              <button>Make a keyboard - It's easy!</button> -->
         </div>
-        <div class="cybrBtn">
-          <span>Оперативная техническая поддержка, клиентоориентированность и
-            квалификация наших сотрудников позволяют клиентам быть спокойными
-            за реализацию и интеграцию цифровых продуктов
-          </span>
-          <span class="cybrBtn__glitch">Оперативная техническая поддержка, клиентоориентированность и
-            квалификация наших сотрудников позволяют клиентам быть спокойными
-            за реализацию и интеграцию цифровых продуктов
-          </span>
-        </div>
-        <div class="cybrBtn">
-          <span>Благодаря предварительному комплексному анализу наша компания
-            подбирает наиболее оптимальное решение, внедрение которого
-            позволит максимизировать прибыль при минимальных затратах на
-            разработку
-          </span>
-          <span class="cybrBtn__glitch">Благодаря предварительному комплексному анализу наша компания
-            подбирает наиболее оптимальное решение, внедрение которого
-            позволит максимизировать прибыль при минимальных затратах на
-            разработку
-          </span>
-        </div>
-        <div class="cybrBtn">
-          <span>Наши заказчики определили, что сотрудничество с нами выгоднее,
-            чем содержание в штате технических специалистов. За счет
-            индивидуального подхода наша компания готова воплощать любые идеи
-            и развивать ваш бизнес
-          </span>
-          <span class="cybrBtn__glitch">Наши заказчики определили, что сотрудничество с нами выгоднее,
-            чем содержание в штате технических специалистов. За счет
-            индивидуального подхода наша компания готова воплощать любые идеи
-            и развивать ваш бизнес
-          </span>
-        </div>
-        <h3></h3>
-        <!-- <h2>PLAY LIKE A PRO.</h2>
-          <p>
-            With these keyboards, you'll get proper bounce, a bit of *click*,
-            and lots of satisfaction.
-          </p>
-          <button>Make a keyboard - It's easy!</button> -->
       </div>
     </div>
+  </div>
 
-    <div id="part2" class="flex row">
-      <div class="part2-info flex column">
+  <div id="services" class="services">
+    <div class="services_left">
+      <div class="services_left_content">
         <h2>НАШИ УСЛУГИ</h2>
         <div class="cyber-tiles-wrapper">
           <div class="cyber-tile">
@@ -166,24 +201,25 @@
           </div>
         </div>
       </div>
-      <div class="part2-info-title">
-        <h4>
-          Благодаря предварительному комплексному анализу наша компания
-          подбирает наиболее оптимальное решение, внедрение которого позволит
-          максимизировать прибыль при минимальных затратах на разработку.
-        </h4>
-      </div>
+    </div>
+    <div class="services_right">
+      <h4>
+        Благодаря предварительному комплексному анализу наша компания
+        подбирает наиболее оптимальное решение, внедрение которого позволит
+        максимизировать прибыль при минимальных затратах на разработку.
+      </h4>
+    </div>
+  </div>
+
+  <div id="part3">
+    <h2 class="title-black">Команда</h2>
+    <div class="images_cards">
+      <img class="teamImage cyberImg" src="./assets/images/team/vasya.jpg" alt="Vaso">
+      <img class="teamImage cyberImg" src="./assets/images/team/sanya.jpg" alt="Sano">
+      <img class="teamImage cyberImg" src="./assets/images/team/den.jpg" alt="Den">
     </div>
 
-    <div id="part3">
-      <h2 class="title-black">Команда</h2>
-      <div class="images_cards">
-        <img class="teamImage cyberImg" src="./assets/images/team/vasya.jpg" alt="Vaso">
-        <img class="teamImage cyberImg" src="./assets/images/team/sanya.jpg" alt="Sano">
-        <img class="teamImage cyberImg" src="./assets/images/team/den.jpg" alt="Den">
-      </div>
-
-      <!-- <div class="swiper mySwiper">
+    <!-- <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="picture">
@@ -214,56 +250,48 @@
           <div class="swiper-button-prev"></div> 
       <div class="swiper-pagination"></div>
     </div> -->
-    </div>
-    <div id="application">
-      <div class="padding flex application">
-        <div class="application_text">
-          <h2 class="form-title">Оставить заявку</h2>
-          <h3 class="form-subTitle">Заполните данную форму и мы свяжемся с Вами в ближайшее время!</h3>
-        </div>
-        <div class="application_form">
-          <form class="form">
+  </div>
+  <div id="application">
+    <div class="padding flex application">
+      <div class="application_text">
+        <h2 class="form-title">Оставить заявку</h2>
+        <h3 class="form-subTitle">Заполните данную форму и мы свяжемся с Вами в ближайшее время!</h3>
+      </div>
+      <div class="application_form">
+        <form class="form">
+          <div class="cyber-input">
+            <input type="text" placeholder="Введите email..." />
+          </div>
+          <h3 class="black_text">или</h3>
+          <div class="inputs">
             <div class="cyber-input">
-              <input type="text" placeholder="Введите email..." />
+              <input type="text" placeholder="Введите номер..." />
             </div>
-            <h3 class="black_text">или</h3>
-            <div class="inputs">
-              <div class="cyber-input">
-                <input type="text" placeholder="Введите номер..." />
-              </div>
-              <div class="cyber-input">
-                <input type="text" placeholder="Введите имя..." />
-              </div>
+            <div class="cyber-input">
+              <input type="text" placeholder="Введите имя..." />
             </div>
+          </div>
 
-            <button class="cyber-button-small">Отправить</button>
-          </form>
-        </div>
-
-
+          <button class="cyber-button-small">Отправить</button>
+        </form>
       </div>
+
     </div>
-    <!-- <div id="part5">
-      <div class="padding">
-        <h2>Документы</h2>
-      </div>
-    </div> -->
-    <footer class="footer">
+  </div>
+  <footer class="footer">
 
-      <img class="footer_icons" src="./assets/icons/tgIcon.svg" alt="telegramm">
-      <img class="footer_icons" src="./assets/icons/phoneIcon.svg" alt="phone">
-      <img class="footer_icons" src="./assets/icons/mailSVG.svg" alt="mail">
-      <img class="footer_icons" src="./assets/icons/documentsIcon.svg" alt="documents">
-    </footer>
+    <img class="footer_icons" src="./assets/icons/tgIcon.svg" alt="telegramm">
+    <img class="footer_icons" src="./assets/icons/phoneIcon.svg" alt="phone">
+    <img class="footer_icons" src="./assets/icons/mailSVG.svg" alt="mail">
+    <img class="footer_icons" src="./assets/icons/documentsIcon.svg" alt="documents">
+  </footer>
 
-    <div class="glitch"></div>
-
-    <!-- <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <!-- <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="dist/main.js"></script>
-    <!-- <script type="module" src="./index.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="dist/main.js"></script>
+  <!-- <script type="module" src="./index.js"></script> -->
 </body>
 
 </html>

@@ -117,6 +117,7 @@ app.load("https://prod.spline.design/Zv5ex1qCxfwDEjRx/scene.splinecode");
 //           ease: "none",
 //         });
 //       },
+
 //     },
 //   });
 // }
