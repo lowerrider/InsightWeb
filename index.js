@@ -88,12 +88,13 @@
 
 // second ANIMATION
 
-// NEW ANIMATION
-import { Application } from "@splinetool/runtime";
+// NEW ANIMATION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// import { Application } from "@splinetool/runtime";
 
-const canvas = document.getElementById("canvas3d");
-const app = new Application(canvas);
-app.load("https://prod.spline.design/Zv5ex1qCxfwDEjRx/scene.splinecode");
+// const canvas = document.getElementById("canvas3d");
+// const app = new Application(canvas);
+// app.load("https://prod.spline.design/Zv5ex1qCxfwDEjRx/scene.splinecode");
+
 // background progress bar
 // function animateBar(triggerElement, onEnterWidth, onLeaveBackWidth, className) {
 //   gsap.to(className, {
