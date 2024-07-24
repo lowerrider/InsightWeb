@@ -782,16 +782,15 @@ h1 {
 
 h2 {
   font-size: 58px;
-
   line-height: 1;
-  color: #d3d3d3;
+  color: #ffff;
   text-transform: uppercase;
 }
 
 h3 {
   font-size: 24px;
   line-height: 1;
-  color: #d3d3d3;
+  color: #ffffff;
 }
 
 #hero {
@@ -956,7 +955,7 @@ a {
 }
 
 h4 {
-  color: #c0c0c0;
+  color: #ffffff;
   margin: 10px;
 }
 
@@ -969,7 +968,7 @@ span {
   --shadow-primary: #00e6f6;
   --primary-hue: 0;
   --primary-lightness: 50;
-  --color: #c0c0c0;
+  --color: #ffff;
   --font-size: 20px;
   --shadow-primary-hue: 180;
   --label-size: 9px;
