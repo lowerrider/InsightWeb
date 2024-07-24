@@ -44,6 +44,7 @@
       <h1 class="glitch" data-text="ПРОЕКТНАЯ ГРУППА IT СПЕЦИАЛИСТОВ">ПРОЕКТНАЯ ГРУППА IT СПЕЦИАЛИСТОВ</h1>
     </div>
 
+
     <div class="tagline">
       <h2>Разработка и внедрение решений любой сложности</h2>
     </div>
@@ -174,7 +175,6 @@
         <div class="cyber-tiles-wrapper">
           <div class="cyber-tile">
             <img src="./assets/icons/svg_1.svg" alt="briefcase-logo" class="icon" />
-
             <h4>Большой стаж в IT</h4>
             <h4>10-летний опыт на рынке разработок</h4>
           </div>
@@ -205,7 +205,7 @@
           <div class="cyber-tile">
             <img src="./assets/icons/svg_5.svg" alt="briefcase-logo" class="icon" />
             <h4>Технологии сегодняшнего дня</h4>
-            <h4>
+            <h4 class="cyber_tile_text">
               Конечный продукт будет использовать самые "свежие" решения,
               применяемые на международном рынке
             </h4>
@@ -230,65 +230,29 @@
     </div>
   </div>
 
-  <div id="part3">
-    <h2 class="title-black">Команда</h2>
+  <div id="team">
+    <h2 class="team_title">Команда</h2>
     <div class="images_cards">
       <img class="teamImage cyberImg" src="./assets/images/team/vasya.jpg" alt="Vaso">
       <img class="teamImage cyberImg" src="./assets/images/team/sanya.jpg" alt="Sano">
       <img class="teamImage cyberImg" src="./assets/images/team/den.jpg" alt="Den">
     </div>
-
-    <!-- <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="picture">
-              <img src="./assets/ceo.jpg" alt="photo" />
-            </div>
-            <div class="detail">
-              <span class="cyberpunk-font">CEO</span>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="picture">
-              <img src="./assets/sanya.jpg" alt="" />
-            </div>
-            <div class="detail">
-              <span class="cyberpunk-font">CTO</span>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="picture">
-              <img src="./assets/den.jpg" alt="photo" />
-            </div>
-            <div class="detail">
-              <span class="cyberpunk-font">Senior&nbsp;&nbsp;Dev</span>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div> 
-      <div class="swiper-pagination"></div>
-    </div> -->
   </div>
   <div id="application">
-    <div class="padding flex application">
+    <div class="application">
       <div class="application_text">
-        <h2 class="form-title">Оставить заявку</h2>
-        <h3 class="form-subTitle">Заполните данную форму и мы свяжемся с Вами в ближайшее время!</h3>
+        <h2 class="application_title">Оставить заявку</h2>
+        <h3 class="application_subTitle">Заполните данную форму и мы свяжемся с Вами в ближайшее время!</h3>
       </div>
       <div class="application_form">
         <form class="form">
-          <div class="cyber-input">
-            <input type="text" placeholder="Введите email..." />
-          </div>
-          <h3 class="black_text">или</h3>
+
+          <input class="cyberpunk" placeholder="Введите email..." type="text" />
+
+          <h3 class="application_text">или</h3>
           <div class="inputs">
-            <div class="cyber-input">
-              <input type="text" placeholder="Введите номер..." />
-            </div>
-            <div class="cyber-input">
-              <input type="text" placeholder="Введите имя..." />
-            </div>
+            <input class="cyberpunk" placeholder="Введите номер..." type="text" />
+            <input class="cyberpunk" placeholder="Введите имя..." type="text" />
           </div>
 
           <button class="cyber-button-small">Отправить</button>
