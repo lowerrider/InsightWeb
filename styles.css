@@ -1188,7 +1188,13 @@ footer::before {
 }
 
 .application_text {
+  justify-self: end;
   margin-bottom: 10vh;
+  text-align: center;
+}
+
+.application_text_left {
+  align-self: self-end;
 }
 
 .application_title {
