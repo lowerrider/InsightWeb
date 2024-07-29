@@ -1141,10 +1141,6 @@ footer::before {
   text-align: center;
 }
 
-.application_form input {
-  height: 40px;
-}
-
 .footer {
   margin-bottom: 0;
 }
@@ -1222,7 +1218,7 @@ footer::before {
   outline: none;
   padding: 0.5vh;
   width: 50vh;
-  border: 30px solid #151515;
+  /* border: 30px solid #151515;
   border-left: 5px solid #151515;
   border-right: 5px solid #151515;
   border-bottom: 15px solid #151515;
@@ -1238,7 +1234,90 @@ footer::before {
     calc(80% - 15px) calc(100% - 0px),
     10px calc(100% - 0px),
     0% calc(100% - 10px)
+  ); */
+}
+
+.formCyberpunk {
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  padding: 0.5vh;
+  outline: none;
+  color: #a6d10a;
+}
+
+.form_group {
+  position: relative;
+  margin: 0 0 3vh 0;
+}
+
+.form_group:first-child {
+  margin: 0 0 1vh 0;
+}
+
+.form_label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  transition: 0.3s;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* .application_form input {
+  height: 40px;
+  width: 50vh;
+  outline: none;
+} */
+
+.application_form {
+  padding: 5vh;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 5vh;
+  clip-path: polygon(
+    0px 25px,
+    26px 0px,
+    calc(60% - 25px) 0px,
+    60% 25px,
+    100% 25px,
+    100% calc(100% - 10px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(80% - 10px) calc(100% - 10px),
+    calc(80% - 15px) calc(100% - 0px),
+    10px calc(100% - 0px),
+    0% calc(100% - 10px)
   );
+  background-color: rgba(21, 21, 21, 0.75);
+  max-width: calc(100% - 10px);
+}
+
+.form_subText {
+  margin: 0px 0 30px 0;
+}
+
+.form_input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0 0 10px 0;
+  border: none;
+  border-bottom: 1px solid #00e6f6;
+  background-color: transparent;
+  outline: none;
+  transition: 0.3s;
+  color: #fff;
+  font-size: 20px;
+}
+
+.form_input:focus {
+  border-bottom: 1px solid #1a73a8;
+}
+
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_label {
+  top: -29px;
+  font-size: 18px;
 }
 
 .inputs {
@@ -1734,3 +1813,254 @@ nav::before {
   height: auto;
   animation: spin2 440s linear 0s infinite;
 } */
+
+/* EXPEREMENT!! */
+/* 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 30px;
+
+  overflow-y: auto;
+
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(#101010, 0.4);
+  }
+}
+
+@keyframes form-open {
+  0% {
+    clip-path: polygon(0 20px, 20px 0, 20px 0, 20px 0, 0 20px, 0 20px);
+  }
+  50% {
+    clip-path: polygon(
+      0 20px,
+      20px 0,
+      20px 0,
+      20px calc(100% - 20px),
+      0 100%,
+      0 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      0 20px,
+      20px 0,
+      100% 0,
+      100% calc(100% - 20px),
+      calc(100% - 20px) 100%,
+      0 100%
+    );
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(-16px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.form {
+  display: grid;
+  grid-gap: 36px;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  overflow: hidden;
+  clip-path: polygon(0 20px, 20px 0, 20px 0, 20px 0, 0 20px, 0 20px);
+  animation: form-open 1s cubic-bezier(0.4, 0, 0.2, 1) forwards 0.5s;
+
+  > * {
+    position: relative;
+    opacity: 0;
+    animation: fade-in 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  > *:nth-child(2) {
+    animation-delay: 1.2s;
+  }
+
+  > *:nth-child(3) {
+    animation-delay: 1.3s;
+  }
+
+  > *:nth-child(4) {
+    animation-delay: 1.4s;
+  }
+
+  > *:nth-child(5) {
+    animation-delay: 1.5s;
+  }
+
+  > *:nth-child(6) {
+    animation-delay: 1.6s;
+  }
+}
+
+.form__image {
+  position: absolute;
+  animation: none;
+  opacity: 1;
+  filter: blur(16px);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(#101010, 0.8), rgba(#101010, 0.8)),
+    url("https://res.cloudinary.com/dokf7npvg/image/upload/v1540355245/0jbUKoX.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.form__logo {
+  width: 80%;
+  height: auto;
+  justify-self: center;
+}
+
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input__element {
+  border: 0;
+  margin: 0;
+  width: 100%;
+  box-shadow: inset 0 -1px 0 0 rgba(black, 0.5);
+  background: rgba(black, 0.3);
+  height: 46px;
+  transition: box-shadow 0.4s ease;
+  padding-left: 10px;
+  color: rgba(white, 0.9);
+  font-size: 16px;
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 0 #fdee06;
+    outline: none;
+  }
+}
+
+.input__label {
+  font-size: 16px;
+  position: absolute;
+  left: 10px;
+  color: rgba(white, 0.4);
+  pointer-events: none;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input__element:focus + .input__label,
+.input__element:not(:placeholder-shown) + .input__label {
+  top: -16px;
+  left: 0;
+  font-size: 14px;
+  transform: translate3d(0, -5px, 0);
+}
+
+.button {
+  background: #fdee06;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%
+  );
+  text-transform: uppercase;
+  text-align: left;
+  padding: 0 20px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #22edfc;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover:before,
+  &:focus:before {
+    transform-origin: left center;
+    transform: scaleX(1);
+  }
+}
+
+.button:hover .button__icon,
+.button:focus .button__icon {
+  transform: translate3d(10px, -50%, 0);
+}
+
+.button__label {
+  position: relative;
+}
+
+.button__icon {
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  right: 25px;
+  width: 24px;
+  height: 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 12px;
+  }
+
+  &:after {
+    content: "";
+    transform: rotate(45deg);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+  }
+} */
+
+/* EXPEREMENT 2 */
