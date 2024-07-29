@@ -1243,7 +1243,6 @@ footer::before {
   width: 50vh;
   padding: 0.5vh;
   outline: none;
-  color: #a6d10a;
 }
 
 .form_group {
@@ -1251,9 +1250,9 @@ footer::before {
   margin: 0 0 3vh 0;
 }
 
-.form_group:first-child {
+/* .form_group:first-child {
   margin: 0 0 1vh 0;
-}
+} */
 
 .form_label {
   position: absolute;
@@ -1318,6 +1317,7 @@ footer::before {
 .form_input:not(:placeholder-shown) ~ .form_label {
   top: -29px;
   font-size: 18px;
+  color: gray;
 }
 
 .inputs {
