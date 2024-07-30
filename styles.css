@@ -832,6 +832,10 @@ footer::before {
   gap: 50px;
 }
 
+.aboutUs_info_title {
+  text-align: center;
+}
+
 .aboutUs_right {
   margin: 0 6vh 10vh 0;
 }
@@ -1153,11 +1157,19 @@ footer::before {
   width: 50vh;
   padding: 0.5vh;
   outline: none;
+  transition: 0.3s;
 }
 
 .form_group {
   position: relative;
   margin: 0 0 3vh 0;
+}
+
+.error-label {
+  font-size: 16px;
+  margin: 0 0 0 1vh;
+  color: red;
+  transition: 0.3s;
 }
 
 .form_label {
