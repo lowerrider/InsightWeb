@@ -647,7 +647,7 @@ button::after {
   margin: auto;
 
   font-weight: 100;
-  background: linear-gradient(45deg, transparent 5%, #fd3649 5%);
+  background: linear-gradient(45deg, transparent 5%, rgb(160, 13, 160) 5%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
@@ -673,7 +673,7 @@ button::after {
     transparent 3%,
     #00e6f6 3%,
     #00e6f6 5%,
-    #fd3649 3%
+    rgb(160, 13, 160) 3%
   );
   text-shadow: -3px -3px 0 #f8f005, 3px 3px 0 #00e6f6;
   clip-path: var(--slice-0);
