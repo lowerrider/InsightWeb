@@ -12,20 +12,6 @@
   font-weight: 100;
 }
 
-@font-face {
-  font-family: "AIRNT Font bold";
-  src: url(./fonts/airnt/AirntQuantum-JRMra.otf);
-  font-style: bold;
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "AIRNT Font";
-  src: url(/fonts/airnt/AirntQuantum-JRMra.otf);
-  font-style: normal;
-  font-weight: 100;
-}
-
 @keyframes glitch {
   0% {
     clip-path: var(--clip-one);
@@ -612,11 +598,6 @@ h3 {
   line-height: 1;
 }
 
-/* a {
-  text-decoration: none;
-  color: #d3d3d3;
-} */
-
 h4 {
   margin: 10px;
   font-size: 20px;
@@ -640,12 +621,7 @@ html {
 }
 
 body {
-  /* position: relative;
-  background: #010003;
-  margin: 0;
-  overflow-x: hidden; */
-
-  font-family: Blender Pro;
+  font-family: "Blender Pro";
   padding: 0;
   margin: 0;
   height: 100%;
@@ -655,6 +631,51 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+}
+
+button,
+button::after {
+  width: 190px;
+  height: 64px;
+  font-size: 19px;
+  text-align: center;
+  margin: auto;
+
+  font-weight: 100;
+  background: linear-gradient(45deg, transparent 5%, #fd3649 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0 0 #00e6f6;
+  position: relative;
+  cursor: pointer;
+}
+
+button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: "INSIGHT";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #fd3649 3%
+  );
+  text-shadow: -3px -3px 0 #f8f005, 3px 3px 0 #00e6f6;
+  clip-path: var(--slice-0);
+}
+button:hover::after {
+  animation: glitchButtons 1s;
+  animation-timing-function: steps(2, end);
 }
 
 .yellow {
@@ -669,7 +690,6 @@ body {
   transition: 0.5s ease-in;
   display: flex;
   position: relative;
-  /* color: #fff; */
   color: rgb(252, 255, 77);
   font-weight: 200;
   font-size: 110px;
@@ -755,51 +775,6 @@ body {
   height: auto;
 }
 
-button,
-button::after {
-  width: 190px;
-  height: 64px;
-  font-size: 19px;
-  text-align: center;
-  margin: auto;
-
-  font-weight: 100;
-  background: linear-gradient(45deg, transparent 5%, #fd3649 5%);
-  border: 0;
-  color: #fff;
-  letter-spacing: 3px;
-  box-shadow: 6px 0 0 #00e6f6;
-  position: relative;
-  cursor: pointer;
-}
-
-button::after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  content: "INSIGHT";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: linear-gradient(
-    45deg,
-    transparent 3%,
-    #00e6f6 3%,
-    #00e6f6 5%,
-    #fd3649 3%
-  );
-  text-shadow: -3px -3px 0 #f8f005, 3px 3px 0 #00e6f6;
-  clip-path: var(--slice-0);
-}
-button:hover::after {
-  animation: glitchButtons 1s;
-  animation-timing-function: steps(2, end);
-}
-
 .footer_icons {
   margin: 0 0 20px 22px;
   transition: 0.3s;
@@ -851,22 +826,10 @@ footer::before {
   margin: 0 40px 0 0;
 }
 
-.services_left_content {
-  gap: 30px;
-  padding: 1%;
-  max-width: 800px;
-}
-
-.services {
-  display: flex;
-  justify-content: space-around;
-  gap: 28vh;
-}
-
 .services2 {
   display: flex;
   flex-direction: column;
-
+  height: 100vh;
   align-items: center;
 }
 
@@ -878,13 +841,11 @@ footer::before {
 
 .services2_card {
   display: grid;
-  /* grid-template-rows: repeat(3, 1fr); */
   text-align: center;
   justify-items: center;
   padding: 4vh;
   padding-left: 1%;
   padding-right: 1%;
-  /* padding-bottom: 10vh; */
   clip-path: polygon(
     0px 25px,
     26px 0px,
@@ -920,19 +881,8 @@ footer::before {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-}
-
-#application {
-  /* background: #f1ea39; */
-  /* position: relative; */
-}
-
-.services_right {
-  display: flex;
   align-items: center;
-  max-width: 700px;
-  font-size: 40px;
+  height: 100vh;
 }
 
 .cybrBtn {
@@ -1110,56 +1060,27 @@ footer::before {
   --primary-hue: 260;
 }
 
-.cyber-tiles-wrapper {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.cyber-tile {
-  --tile-width: 38vh;
-  --tile-padding: 1vh;
-  --tile-edges: 20px;
-  --label-margins: calc(var(--tile-edges) - var(--tile-padding));
-  --og-clip-path: polygon(
-    0 0,
-    0 calc(100% - var(--tile-edges)),
-    var(--tile-edges) 100%,
-    100% 100%,
-    100% var(--tile-edges),
-    calc(100% - var(--tile-edges)) 0
-  );
-  width: var(--tile-width);
-  clip-path: var(--og-clip-path);
-  padding: var(--tile-padding);
-  padding-bottom: var(--tile-edges);
-  height: 20vh;
-  background-color: #151515;
-  color: white;
-  display: grid;
-  justify-items: center;
-  text-align: center;
-}
-
 .footer {
   margin-bottom: 0;
 }
 
 .images_cards {
   display: grid;
+  max-width: fit-content;
   margin-bottom: 60px;
   grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3vh;
+  grid-column-gap: 18vh;
   justify-items: center;
   align-items: center;
 }
 
 .team_title {
-  margin: 6vh auto;
+  margin: 6vh auto 3vh;
 }
 
 .teamImage {
-  height: 50vh;
-  cursor: pointer;
+  height: 35vh;
 }
 
 .cyberImg {
@@ -1184,12 +1105,16 @@ footer::before {
   max-width: calc(100% - 10px);
 }
 
+.cyberImg_text {
+  text-align: center;
+}
+
 .application {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
-  grid-template-rows: 44em;
+  height: 100vh;
 }
 
 .application_text {
@@ -1204,37 +1129,6 @@ footer::before {
 
 .application_title {
   margin-bottom: 20px;
-  /* -webkit-text-stroke: 2px #000000;
-  text-stroke: 2px #000000; */
-}
-
-.form {
-  padding: 12px;
-  display: grid;
-  gap: 16px;
-}
-
-.cyberpunk {
-  outline: none;
-  padding: 0.5vh;
-  width: 50vh;
-  /* border: 30px solid #151515;
-  border-left: 5px solid #151515;
-  border-right: 5px solid #151515;
-  border-bottom: 15px solid #151515;
-  clip-path: polygon(
-    0px 25px,
-    26px 0px,
-    calc(60% - 25px) 0px,
-    60% 25px,
-    100% 25px,
-    100% calc(100% - 10px),
-    calc(100% - 15px) calc(100% - 10px),
-    calc(80% - 10px) calc(100% - 10px),
-    calc(80% - 15px) calc(100% - 0px),
-    10px calc(100% - 0px),
-    0% calc(100% - 10px)
-  ); */
 }
 
 .formCyberpunk {
@@ -1250,10 +1144,6 @@ footer::before {
   margin: 0 0 3vh 0;
 }
 
-/* .form_group:first-child {
-  margin: 0 0 1vh 0;
-} */
-
 .form_label {
   position: absolute;
   top: 0px;
@@ -1264,13 +1154,8 @@ footer::before {
   font-size: 20px;
 }
 
-/* .application_form input {
-  height: 40px;
-  width: 50vh;
-  outline: none;
-} */
-
 .application_form {
+  margin-top: 8vh;
   padding: 5vh;
   padding-left: 3%;
   padding-right: 3%;
@@ -1316,6 +1201,7 @@ footer::before {
 .form_input:focus ~ .form_label,
 .form_input:not(:placeholder-shown) ~ .form_label {
   top: -29px;
+  left: 8px;
   font-size: 18px;
   color: gray;
 }
@@ -2064,3 +1950,90 @@ nav::before {
 } */
 
 /* EXPEREMENT 2 */
+
+/* .services_left_content {
+  gap: 30px;
+  padding: 1%;
+  max-width: 800px;
+} */
+
+/* .services {
+  display: flex;
+  justify-content: space-around;
+  gap: 28vh;
+} */
+
+/* a {
+  text-decoration: none;
+  color: #d3d3d3;
+} */
+
+/* .cyber-tiles-wrapper {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+} */
+
+/* .cyber-tile {
+  --tile-width: 38vh;
+  --tile-padding: 1vh;
+  --tile-edges: 20px;
+  --label-margins: calc(var(--tile-edges) - var(--tile-padding));
+  --og-clip-path: polygon(
+    0 0,
+    0 calc(100% - var(--tile-edges)),
+    var(--tile-edges) 100%,
+    100% 100%,
+    100% var(--tile-edges),
+    calc(100% - var(--tile-edges)) 0
+  );
+  width: var(--tile-width);
+  clip-path: var(--og-clip-path);
+  padding: var(--tile-padding);
+  padding-bottom: var(--tile-edges);
+  height: 20vh;
+  background-color: #151515;
+  color: white;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+} */
+
+/* .form {
+  padding: 12px;
+  display: grid;
+  gap: 16px;
+} */
+
+/* .cyberpunk {
+  outline: none;
+  padding: 0.5vh;
+  width: 50vh;
+  border: 30px solid #151515;
+  border-left: 5px solid #151515;
+  border-right: 5px solid #151515;
+  border-bottom: 15px solid #151515;
+  clip-path: polygon(
+    0px 25px,
+    26px 0px,
+    calc(60% - 25px) 0px,
+    60% 25px,
+    100% 25px,
+    100% calc(100% - 10px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(80% - 10px) calc(100% - 10px),
+    calc(80% - 15px) calc(100% - 0px),
+    10px calc(100% - 0px),
+    0% calc(100% - 10px)
+  );
+} */
+
+/* .form_group:first-child {
+  margin: 0 0 1vh 0;
+} */
+
+/* .application_form input {
+  height: 40px;
+  width: 50vh;
+  outline: none;
+} */
