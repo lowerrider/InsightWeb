@@ -1,3 +1,14 @@
+import IMask from "imask";
+
+const numberMask = document.getElementById("phone");
+const maskOptions = {
+  mask: "{+7} (000) 000 - 00 - 00",
+  placeholder: " ",
+  lazy: true,
+};
+
+const mask = new IMask(numberMask, maskOptions);
+
 // import { Application } from "@splinetool/runtime";
 
 // const canvas = document.getElementById("canvas3d");
