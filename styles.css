@@ -631,20 +631,20 @@ body {
   margin: 0;
   height: 100%;
   overflow-x: hidden;
-  /* position: relative;
-  background-image: url("./assets/images/001\ \(1\).mp4");
+  position: relative;
+  background-image: url("./assets/images/004.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
-.video {
+/* .video {
   position: fixed;
-  z-index: -100;
+  z-index: -1;
   width: 100%;
   height: auto;
-}
+} */
 
 button,
 button::after {
