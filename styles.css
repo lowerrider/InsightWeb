@@ -631,11 +631,19 @@ body {
   margin: 0;
   height: 100%;
   overflow-x: hidden;
-  background-image: url("./assets/images/003.gif");
+  /* position: relative;
+  background-image: url("./assets/images/001\ \(1\).mp4");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+}
+
+.video {
+  position: fixed;
+  z-index: -100;
+  width: 100%;
+  height: auto;
 }
 
 button,
