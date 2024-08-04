@@ -574,6 +574,7 @@ span,
 button {
   color: #ffffff;
   font-family: "Blender Pro";
+  margin: 0;
 }
 
 input {
@@ -582,16 +583,14 @@ input {
 }
 
 h1 {
-  font-size: 8vw;
-  top: calc(100vh - 40vw);
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -5px;
-
-  margin: 0;
+  font-size: clamp(2rem, 7vw, 7rem);
 }
 
 h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+}
+
+/* h2 {
   font-size: 58px;
   line-height: 1;
 
@@ -608,7 +607,7 @@ h4 {
   font-size: 20px;
   letter-spacing: 2px;
   opacity: 1;
-}
+} */
 
 span {
   font-size: 14px;
@@ -695,39 +694,24 @@ button:hover::after {
   color: rgb(252, 255, 77);
 }
 
-.test_title {
-  height: 100vh;
+.heading {
+  height: 65vh;
 }
 
-.text_header h1 {
-  transition: 0.5s ease-in;
-  display: flex;
-  position: relative;
+.heading_wrapper {
+  margin: 22vh 10%;
+}
+
+.heading_title h1 {
   color: rgb(252, 255, 77);
-  font-weight: 200;
-  font-size: 110px;
-  margin: 0;
+  font-weight: bold;
 }
 
-.text_header {
-  display: flex;
-  position: absolute;
-  margin: 0;
-  top: 232px;
-  left: 282px;
-  z-index: 1;
-}
-
-.tagline h2 {
-  display: flex;
-  position: absolute;
-  font-family: Blender Pro;
-  color: #fff;
+.heading_subTitle {
   font-weight: 100;
   font-size: 25px;
   text-transform: uppercase;
-  left: 282px;
-  top: 624px;
+  margin-top: 20px;
 }
 
 .glitch {
@@ -826,12 +810,14 @@ footer::before {
 
 .abotUs_content {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 60% 1fr;
   align-items: center;
+  grid-gap: 0 100px;
+  margin: 0 40px;
 }
 
-.aboutUs_left {
-  margin-left: 1vh;
+.aboutUs_right {
+  margin: 0 auto;
 }
 
 .aboutUs_info_content {
@@ -842,17 +828,18 @@ footer::before {
 
 .aboutUs_info_title {
   text-align: center;
-}
-
-.aboutUs_right {
-  margin: 0 6vh 10vh 0;
+  margin-bottom: 40px;
 }
 
 .services2 {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   align-items: center;
+  margin-top: 30vh;
+}
+
+.services2_title {
+  margin-bottom: 40px;
 }
 
 .icon {
@@ -863,16 +850,29 @@ footer::before {
 .services2_cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14vh;
+  gap: 100px;
+}
+
+.services2_heading {
+  font-size: clamp(24px, 4vw, 36px);
+  letter-spacing: 2px;
+}
+
+.services2_text {
+  font-size: clamp(18px, 3vw, 24px);
+  letter-spacing: 2px;
+}
+.services2_text_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .services2_card {
   display: grid;
   text-align: center;
   justify-items: center;
-  padding: 4vh;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding: 4vh 1%;
   clip-path: polygon(
     0px 25px,
     26px 0px,
@@ -887,10 +887,11 @@ footer::before {
     0% calc(100% - 10px)
   );
   background-color: rgba(21, 21, 21, 0.75);
-  max-width: 50vh;
+  max-width: 650px;
+  grid-row-gap: 20px;
 }
 
-#hero {
+/* #hero {
   height: 100vh;
 }
 
@@ -902,15 +903,15 @@ footer::before {
   height: 100vh;
   width: 100%;
   margin-bottom: 140px;
-}
-
+} */
+/* 
 #team {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
+} */
 
 .cybrBtn {
   --primary: rgba(21, 21, 21, 0.5);
@@ -1094,21 +1095,19 @@ footer::before {
 
 .images_cards {
   display: grid;
-  max-width: fit-content;
-  margin-bottom: 60px;
   grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 3vh;
-  grid-column-gap: 3vh;
   justify-items: center;
   align-items: center;
-}
-
-.team_title {
-  margin: 6vh auto 3vh;
+  grid-gap: 20px;
 }
 
 .teamImage {
-  height: 35vh;
+  /* height: 35vh; */
+  width: 100%;
+  /* max-width: 450px; */
+  height: auto;
+  max-height: 100%;
+  min-height: 200px;
 }
 
 .cyberImg {
@@ -1135,6 +1134,7 @@ footer::before {
 
 .cyberImg_text {
   text-align: center;
+  font-size: clamp(18px, 3vw, 22px);
 }
 
 .application {
@@ -1142,7 +1142,7 @@ footer::before {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .application_text {
@@ -1245,6 +1245,27 @@ footer::before {
 .inputs {
   display: grid;
   gap: 40px;
+}
+
+@media (max-width: 1600px) {
+  .abotUs_content {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  .images_cards {
+    margin: 0 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .aboutUs_info_title {
+    text-align: left;
+  }
+  .aboutUs_right {
+    margin: 0 10% 80px;
+  }
+  .application {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* EXPEREMENT */
