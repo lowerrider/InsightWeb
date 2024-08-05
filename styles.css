@@ -851,6 +851,7 @@ footer::before {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 100px;
+  margin: 0 30px;
 }
 
 .services2_heading {
@@ -1256,6 +1257,8 @@ footer::before {
   .images_cards {
     margin: 0 20px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    column-gap: 110px;
+    row-gap: 120px;
   }
   .aboutUs_info_title {
     text-align: left;
@@ -1265,6 +1268,127 @@ footer::before {
   }
   .application {
     grid-template-columns: 1fr;
+  }
+
+  .services2 {
+    align-items: normal;
+  }
+
+  .services2_title {
+    text-align: center;
+  }
+
+  .services2_cards {
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    gap: 50px;
+    margin: 0 20px;
+  }
+
+  .services2_heading {
+    font-size: clamp(24px, 4vw, 30px);
+  }
+
+  .services2_text {
+    font-size: clamp(18px, 3vw, 20px);
+  }
+
+  .application {
+    padding: 90px;
+  }
+
+  .application_text {
+    justify-self: normal;
+    margin: 0;
+  }
+
+  .application_form {
+    margin: 40px 0 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .services2_cards {
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+    /* gap:0 */
+  }
+
+  .services2_card {
+    max-width: 372px;
+    /* grid-row-gap: 0; */
+  }
+
+  .services2_heading {
+    font-size: clamp(24px, 4vw, 24px);
+  }
+
+  .services2_text {
+    font-size: clamp(18px, 3vw, 18px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .services2_cards {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 960px) {
+  button {
+    width: 100px;
+    height: 45px;
+    font-size: 14px;
+    position: initial;
+  }
+
+  .logo-img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 630px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .teamImage {
+    max-width: 400px;
+  }
+
+  .aboutUs_info_title {
+    text-align: center;
+  }
+
+  .application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .form_group {
+    width: 38vh;
+  }
+
+  .formCyberpunk {
+    width: unset;
+  }
+}
+
+@media (max-width: 486px) {
+  .form_group {
+    width: 29vh;
+  }
+
+  .form_label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1599px) {
+  .application {
+    height: unset;
   }
 }
 
