@@ -632,6 +632,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-image: url("./assets/images/004.webp");
+  /* background-image: url("./assets/images/002.gif"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1329,6 +1330,10 @@ footer::before {
 @media (max-width: 1024px) {
   .services2_cards {
     justify-items: center;
+  }
+
+  body {
+    background-image: url("./assets/images/002.gif");
   }
 }
 
