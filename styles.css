@@ -631,20 +631,20 @@ body {
   height: 100%;
   overflow-x: hidden;
   position: relative;
-  background-image: url("./assets/images/004.webp");
-  /* background-image: url("./assets/images/002.gif"); */
+  /* background-image: url("./assets/images/004.webp");
+  background-image: url("./assets/images/002.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
-/* .video {
+.video {
   position: fixed;
   z-index: -1;
   width: 100%;
   height: auto;
-} */
+}
 
 button,
 button::after {
@@ -1332,9 +1332,9 @@ footer::before {
     justify-items: center;
   }
 
-  body {
+  /* body {
     background-image: url("./assets/images/002.gif");
-  }
+  } */
 }
 
 @media (max-width: 960px) {
