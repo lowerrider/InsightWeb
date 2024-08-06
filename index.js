@@ -1,8 +1,9 @@
 import IMask from "imask";
 
-const backgroundVideo = document.getElementById("body");
+const body = document.querySelector("body");
 
-backgroundVideo.playsinline = true;
+video.setAttribute("playsinline", true);
+body.setAttribute("playsinline", true);
 
 const numberMask = document.getElementById("phone");
 const maskOptions = {
