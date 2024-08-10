@@ -1,10 +1,5 @@
 import IMask from "imask";
 
-const body = document.querySelector("body");
-
-video.setAttribute("playsinline", true);
-body.setAttribute("playsinline", true);
-
 const numberMask = document.getElementById("phone");
 const maskOptions = {
   mask: "{+7} (000) 000 - 00 - 00",
