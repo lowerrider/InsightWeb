@@ -899,7 +899,6 @@ span {
 
 .formCyberpunk {
   display: flex;
-
   flex-direction: column;
   width: 100%;
   padding: 0.5vh;
@@ -916,6 +915,7 @@ span {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  transition: 0.3s;
 }
 
 .form_group {
