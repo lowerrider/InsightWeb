@@ -893,13 +893,29 @@ span {
   margin-bottom: 40px;
 }
 
+.textCenter {
+  text-align: center;
+}
+
 .formCyberpunk {
   display: flex;
+
   flex-direction: column;
   width: 100%;
   padding: 0.5vh;
   outline: none;
   transition: 0.3s;
+}
+
+.iconFormSend {
+  width: 120px;
+}
+
+.form_sends {
+  display: none;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .form_group {
@@ -925,7 +941,7 @@ span {
 }
 
 .application_form {
-  margin-top: 8vh;
+  /* margin-top: 8vh; */
   padding: 5vh 3%;
   clip-path: polygon(
     0px 25px,
@@ -976,6 +992,11 @@ span {
 .inputs {
   display: grid;
   gap: 40px;
+}
+
+.form-error {
+  margin-top: 10px;
+  text-align: center;
 }
 
 @media (max-width: 1600px) {

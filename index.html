@@ -290,6 +290,7 @@
         <form class="formCyberpunk" id="add-form" action="">
           <div class="form_group">
             <input
+              name="phone"
               data-min-length="22"
               type="tel"
               id="phone"
@@ -299,53 +300,33 @@
             <label class="form_label">Контактный номер телефона</label>
           </div>
           <div class="form_group">
-            <input data-required="true" class="form_input" placeholder=" " />
+            <input
+              name="email"
+              id="email"
+              data-required="true"
+              class="form_input"
+              placeholder=" " />
 
             <label class="form_label">Адрес электронной почты</label>
           </div>
-          <!-- <h3 class="form_subText">или</h3> -->
-
           <div class="form_group">
-            <input class="form_input" placeholder=" " />
+            <input name="name" id="name" class="form_input" placeholder=" " />
 
             <label class="form_label">Имя контактного лица</label>
           </div>
-
           <button type="submit">Отправить</button>
+          <div id="errorMsg" class="error-label"></div>
         </form>
-        <!-- <form class="form">
-
-          <input class="cyberpunk" placeholder="Введите email..." type="text" />
-
-          <h3>или</h3>
-          <div class="inputs">
-            <input class="cyberpunk" placeholder="Введите номер..." type="text" />
-            <input class="cyberpunk" placeholder="Введите имя..." type="text" />
-          </div>
-
-          <button>Отправить</button>
-
-        </form> -->
-
-        <!-- <form class="form" action="" method="get">
-            <div class="form__image"></div>
-            <div class="input">
-              <input id="name" type="text" class="input__element" placeholder=" " />
-              <label class="input__label" for="name">Your name</label>
-            </div>
-            <div class="input">
-              <input id="email" type="email" class="input__element" placeholder=" " />
-              <label class="input__label" for="email">Email</label>
-            </div>
-            <div class="input">
-              <input id="pasword" type="password" class="input__element" placeholder=" " />
-              <label class="input__label" for="password">Password</label>
-            </div>
-            <button type="button" class="button">
-              <div class="button__label">Continue</div>
-              <div class="button__icon"></div>
-            </button>
-          </form> -->
+        <div class="form_sends">
+          <img
+            class="iconFormSend"
+            src="./assets/icons/sent_8296385.svg"
+            alt="iconFormSend" />
+          <h3 class="application_subTitle textCenter">
+            Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее
+            время.
+          </h3>
+        </div>
       </div>
     </div>
     <footer class="footer">
