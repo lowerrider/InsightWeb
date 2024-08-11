@@ -1057,6 +1057,10 @@ span {
 }
 
 @media (max-width: 1280px) {
+  .iconFormSend {
+    width: 80px;
+  }
+
   .services2_cards {
     grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   }
@@ -1112,6 +1116,10 @@ span {
 }
 
 @media (max-width: 630px) {
+  .iconFormSend {
+    width: 60px;
+  }
+
   .header {
     flex-direction: column;
   }
