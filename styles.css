@@ -1168,6 +1168,13 @@ span {
   }
 }
 
+@media (max-width: 400px) {
+  button {
+    width: 80px;
+    height: 36px;
+  }
+}
+
 html,
 body {
   height: 100%;
