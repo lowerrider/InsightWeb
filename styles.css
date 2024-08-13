@@ -390,6 +390,7 @@ body {
 }
 
 .video {
+  transition: height 999999s;
   background-attachment: fixed;
   position: fixed;
   min-width: 100%;
