@@ -1096,6 +1096,10 @@ span {
 }
 
 @media (max-width: 960px) {
+  .video {
+    left: 80%;
+  }
+
   button {
     width: 100px;
     height: 45px;
@@ -1144,6 +1148,10 @@ span {
 }
 
 @media (max-width: 540px) {
+  .video {
+    left: 116%;
+  }
+
   .formCyberpunk {
     width: unset;
   }
