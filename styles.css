@@ -1167,3 +1167,14 @@ span {
     max-width: calc(100% - 20px);
   }
 }
+
+@media only screen and (max-width: 500px) {
+  /* to prevent auto hiding of the search bar */
+  body,
+  html {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+  }
+}
