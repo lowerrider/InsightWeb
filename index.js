@@ -326,26 +326,26 @@ subTitle.style.setProperty("--animate-duration", "2s");
 
 // resize();
 
-let transporter = nodemailer.createTransport({
-  host: "post.omega-personal.ru",
-  port: 465,
-  secure: true, // true for 465, false for other ports
-  auth: {
-    user: "no-reply@insgt.ru", // generated ethereal user
-    pass: "F@ster45", // generated ethereal password
-  },
-});
+// let transporter = nodemailer.createTransport({
+//   host: "post.omega-personal.ru",
+//   port: 465,
+//   secure: true, // true for 465, false for other ports
+//   auth: {
+//     user: "no-reply@insgt.ru", // generated ethereal user
+//     pass: "F@ster45", // generated ethereal password
+//   },
+// });
 
-transporter
-  .sendMail({
-    from: "no-reply@insgt.ru",
-    to: "info@insgt.ru",
-    subject: "Новая заявка с сайта",
-    text: msg,
-  })
-  .then(() => {
-    console.log("mail sent");
-  })
-  .catch((e) => {
-    console.log("error", e);
-  });
+// transporter
+//   .sendMail({
+//     from: "no-reply@insgt.ru",
+//     to: "info@insgt.ru",
+//     subject: "Новая заявка с сайта",
+//     text: msg,
+//   })
+//   .then(() => {
+//     console.log("mail sent");
+//   })
+//   .catch((e) => {
+//     console.log("error", e);
+//   });
