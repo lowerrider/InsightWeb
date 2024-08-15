@@ -1,6 +1,8 @@
 import IMask from "imask";
 
-const URL = "https://utility.insgt.ru/api/contact-form";
+// const URL = "https://utility.insgt.ru/api/contact-form";
+const URL =
+  "https://api.branchcore.ru/workspaces/8b071bfa-6e29-4961-a6fb-389fe69c71ae/api/services/59f922c2-e5d3-451c-8f3a-04ab0dba2f62/r/rq";
 
 const ERROR_MSG = {
   email: "",
@@ -145,6 +147,23 @@ NAME_INPUT.addEventListener("change", function () {
   removeFormError();
   removeError(NAME_INPUT);
 });
+
+new WOW().init();
+
+const logo = document.querySelector(".logo-img");
+logo.classList.add("animate__animated", "animate__fadeInDown");
+logo.style.setProperty("--animate-duration", "2s");
+
+const buttons = document.querySelector(".header_right");
+buttons.classList.add("animate__animated", "animate__fadeInDown");
+buttons.style.setProperty("--animate-duration", "3s");
+
+const title = document.querySelector(".glitch");
+title.classList.add("animate__animated", "animate__bounceInLeft");
+
+const subTitle = document.querySelector(".heading_subTitle");
+subTitle.classList.add("animate__animated", "animate__bounceInLeft");
+subTitle.style.setProperty("--animate-duration", "2s");
 
 // import { Application } from "@splinetool/runtime";
 
@@ -306,3 +325,27 @@ NAME_INPUT.addEventListener("change", function () {
 // }
 
 // resize();
+
+let transporter = nodemailer.createTransport({
+  host: "post.omega-personal.ru",
+  port: 465,
+  secure: true, // true for 465, false for other ports
+  auth: {
+    user: "no-reply@insgt.ru", // generated ethereal user
+    pass: "F@ster45", // generated ethereal password
+  },
+});
+
+transporter
+  .sendMail({
+    from: "no-reply@insgt.ru",
+    to: "info@insgt.ru",
+    subject: "Новая заявка с сайта",
+    text: msg,
+  })
+  .then(() => {
+    console.log("mail sent");
+  })
+  .catch((e) => {
+    console.log("error", e);
+  });

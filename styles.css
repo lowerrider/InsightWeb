@@ -1,3 +1,4 @@
+@import "./animate.css";
 @font-face {
   font-family: "Blender Pro";
   src: url(fonts/BlenderPro-Bold.ttf);
@@ -1187,12 +1188,12 @@ body {
   height: 100%;
 }
 
-#scrollable-content {
+/* #scrollable-content {
   height: 100%;
   overflow-y: scroll;
-}
-
-/* * {
+} */
+/* 
+* {
   --out-width: 2px;
   outline: var(--out-width) solid red;
   outline-offset: calc(0px - var(--out-width));
