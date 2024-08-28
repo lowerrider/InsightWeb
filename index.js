@@ -1,8 +1,8 @@
 import IMask from "imask";
 
-// const URL = "https://utility.insgt.ru/api/contact-form";
-const URL =
-  "https://api.branchcore.ru/workspaces/8b071bfa-6e29-4961-a6fb-389fe69c71ae/api/services/59f922c2-e5d3-451c-8f3a-04ab0dba2f62/r/rq";
+const URL = "https://utility.insgt.ru/api/contact-form";
+// const URL =
+//   "https://api.branchcore.ru/workspaces/8b071bfa-6e29-4961-a6fb-389fe69c71ae/api/services/59f922c2-e5d3-451c-8f3a-04ab0dba2f62/r/rq";
 
 const ERROR_MSG = {
   email: "",

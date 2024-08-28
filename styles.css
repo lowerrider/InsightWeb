@@ -529,6 +529,50 @@ button:hover::after {
   height: auto;
 }
 
+.footer_container {
+  /* border-radius: 10px;
+  text-align: center;
+  height: 40px;
+  width: 220px;
+  background-color: #00e6f6;
+  margin: 0 0 10px 0; */
+  border: 1px solid #00e6f6;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  background: #00e6f6;
+  color: #fff;
+  box-shadow: 0 0 7px #000; /* Добавляем тень для блока */
+}
+
+.footer_container::after,
+.footer_container::before {
+  content: "";
+  position: absolute;
+  background: #00e6f6;
+  left: 20px;
+  bottom: -11px;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 7px #000; /* Добавляем тень для уголка */
+  z-index: -1; /* Прячем за основным блоком */
+  transform: rotate(45deg); /* Поворачиваем на 45º */
+  -webkit-transform: rotate(45deg);
+}
+.footer_container::before {
+  z-index: 1; /* Накладываем поверх, чтобы скрыть следы тени */
+  box-shadow: none; /* Прячем тень */
+}
+
+.phoneNumber {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Blender Pro";
+  margin: 0 0 20px 10px;
+  font-size: clamp(14px, 3vw, 24px);
+  letter-spacing: 2px;
+}
+
 .footer_icons {
   margin: 0 0 20px 22px;
   transition: 0.3s;
@@ -547,6 +591,8 @@ footer {
   margin-top: 100px;
   background-color: #000;
   padding: 10px 20px 0;
+  display: flex;
+  align-items: center;
 }
 footer::before {
   content: " ";
@@ -1167,9 +1213,20 @@ span {
   .services2_card {
     max-width: calc(100% - 20px);
   }
+
+  footer {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 400px) {
+  .header_right {
+    gap: 12px;
+  }
+  .heading_title h1 {
+    font-size: 26px;
+  }
+
   .services2_cards {
     display: flex;
     flex-direction: column;
@@ -1180,6 +1237,7 @@ span {
   button {
     width: 80px;
     height: 36px;
+    font-size: 10px;
   }
 }
 
