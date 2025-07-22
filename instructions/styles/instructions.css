@@ -106,6 +106,7 @@ h1 {
 
 h2 {
   font-size: clamp(2rem, 4vw, 4rem);
+  color: white;
 }
 
 h1,
@@ -113,6 +114,7 @@ h2,
 h3,
 h4,
 span,
+p,
 button {
   color: #ffffff;
   font-family: "Blender Pro";
@@ -120,7 +122,7 @@ button {
 }
 
 p {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 15px;
 }
 
@@ -299,17 +301,37 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Стили для блоков с функциями */
-.card .card-block {
+.center {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Стили для блоков с функциями */
+.card {
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: clamp(22px, 5vw, 36px);
+}
+
+.card .card-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
+  justify-items: center;
 }
 
 .card .card-item {
   display: grid;
-  text-align: center;
+  grid-template-rows: auto auto auto;
   justify-items: center;
+  text-align: center;
   padding: 4vh 1%;
   clip-path: polygon(
     0px 25px,
@@ -320,26 +342,29 @@ h2 {
     100% calc(100% - 10px),
     calc(100% - 15px) calc(100% - 10px),
     calc(80% - 10px) calc(100% - 10px),
-    calc(80% - 15px) calc(100% - 0px),
-    10px calc(100% - 0px),
+    calc(80% - 15px) 100%,
+    10px 100%,
     0% calc(100% - 10px)
   );
-  background-color: rgba(21, 21, 21, 0.75);
-  max-width: 650px;
-  grid-row-gap: 20px;
+  background-color: rgba(21, 21, 21, 0.85);
+  max-width: 100%;
+  width: 100%;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  grid-row-gap: 10px;
 }
 
-.card .card-item h3 {
+.card .card-item strong {
+  font-size: 18px;
   color: #f4f4f9;
-  margin-bottom: 10px;
-  font-size: clamp(18px, 4vw, 36px);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .card .card-item p {
-  font-size: clamp(14px, 3vw, 24px);
-  letter-spacing: 2px;
-  color: #fff;
+  margin: 0;
+  font-size: clamp(14px, 2.5vw, 20px);
+  letter-spacing: 1px;
+  color: #ddd;
 }
 
 /* Стили для блока с преимуществами */

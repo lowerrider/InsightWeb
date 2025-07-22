@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Наш продукт</title>
     <link rel="stylesheet" href="./styles/product.css" />
+    <link rel="icon" href="../assets/icons/favicon.png" type="image/x-icon" />
   </head>
 
   <body>
@@ -32,6 +33,47 @@
           вакансиями. Она позволяет эффективно управлять всем циклом
           трудоустройства, от поиска сотрудников до их назначения на проекты.
         </p>
+        <section class="card" style="display: flex; justify-content: center">
+          <div class="card-item">
+            <h2>Перейти к инструкции по использованию</h2>
+            <p>
+              Для работы в системе Mega-ERP не требуется установка ПО.
+              Специалисты нашей компании разворачивают серверную часть на
+              указанное вами оборудование, после чего работа происходит в
+              веб-версии продукта.
+            </p>
+            <p>Для просмотра инструкции требуется пройти авторизацию</p>
+          </div>
+        </section>
+
+        <div class="application_form">
+          <!-- <input type="text" id="username" placeholder="Логин" /> -->
+          <form class="formCyberpunk" id="login-form" action="">
+            <div class="form_group">
+              <input
+                name="email"
+                type="email"
+                id="email"
+                class="form_input"
+                placeholder="" />
+
+              <label class="form_label">Логин</label>
+            </div>
+            <div class="form_group">
+              <input
+                name="password"
+                type="password"
+                id="password"
+                class="form_input"
+                placeholder="" />
+
+              <label class="form_label">Пароль</label>
+            </div>
+            <!-- <input type="password" id="password" placeholder="Пароль" /> -->
+            <button type="submit">Войти</button>
+            <p id="error" style="color: red"></p>
+          </form>
+        </div>
       </section>
 
       <section class="card">
@@ -146,5 +188,6 @@
         </ul>
       </section>
     </div>
+    <script type="module" src="./js/product.js"></script>
   </body>
 </html>
